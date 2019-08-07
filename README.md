@@ -6,7 +6,7 @@
 
 Build the client
 
-`go build -o client/public/main.wasm client/src/main.go`
+`GOARCH=wasm GOOS=js go build -o client/public/main.wasm client/src/main.go`
 
 Run the server
 
@@ -15,3 +15,7 @@ Run the server
 view it
 
 `open http://localhost:8080`
+
+## References
+
+This demo was largely based off of this blog post: (Compiling Go to WebAssembly)[https://www.sitepen.com/blog/compiling-go-to-webassembly/]
