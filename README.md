@@ -1,7 +1,10 @@
 # WebAssembly demo
 
-Build the client
+`git clone git@github.com:ssoroka/wasm-demo.git $GOPATH/src/github.com/ssoroka/demo`
 
+`cd $GOPATH/src/github.com/ssoroka/demo`
+
+Build the client
 
 `go build -o client/public/main.wasm client/src/main.go`
 
